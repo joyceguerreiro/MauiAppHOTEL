@@ -1,0 +1,31 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHOTEL.Views.Sobre"
+             Title="Sobre Nós"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#4e5861">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <Label Text="Sobre Nós" 
+               FontSize="24" 
+               FontAttributes="Bold"
+               HorizontalOptions="Center" 
+               TextColor="#b1ccc4"/>
+
+        <Frame Margin="10" Padding="15" CornerRadius="10" BackgroundColor="#fcfcfc" HasShadow="True">
+            <Label 
+                Text="Nós oferecemos uma experiência única de conforto e elegância em meio à natureza, com atendimento personalizado e serviços de alta qualidade para tornar sua estadia inesquecível. Venha relaxar e desfrutar do melhor em hospitalidade!"
+                FontSize="16"
+                TextColor="#b1ccc4"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"/>
+        </Frame>
+
+        <!-- Novo Label para "Desenvolvido por" e o ano -->
+        <Label Text="Site desenvolvido por: Joyce K. G Soares - 2024 ©" 
+               FontSize="14"
+               HorizontalOptions="Center"
+               TextColor="#b1ccc4"/>
+    </VerticalStackLayout>
+
+</ContentPage>

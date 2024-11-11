@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHOTEL.Views.HospedagemContratada"
+             Title="HospedagemContratada"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#4e5861">
+    
+    <VerticalStackLayout VerticalOptions="CenterAndExpand">
+
+        <Label Text="Suíte Super Luxo"
+               HorizontalOptions="Center" 
+               FontAttributes="Bold"
+               FontSize="50"
+               TextColor="#b1ccc4"
+               HorizontalTextAlignment="Center"/>
+
+        <Frame Margin="10" BackgroundColor="#fcfcfc">
+            <HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label Text="Adultos: "/>
+                    <Label Text="2" 
+                           TextColor="#b1ccc4"/>
+                 </HorizontalStackLayout>
+                    
+                 <HorizontalStackLayout>
+                    <Label Text="Crianças: "/>
+                    <Label Text="1" 
+                           TextColor="#b1ccc4"/>
+                 </HorizontalStackLayout>
+             </HorizontalStackLayout>
+         </Frame>
+
+        <Frame Margin="10" BackgroundColor="#fcfcfc">
+            <Grid ColumnDefinitions="*, *, *"
+                  RowDefinitions="Auto, Auto">
+                <Label Grid.Row="0" Grid.Column="0" Text="Chech-in:" />
+                <Label Grid.Row="0" Grid.Column="1" Text="Chech-out:" />
+                <Label Grid.Row="0" Grid.Column="2" Text="Estadia:" />
+
+                <Label Grid.Row="1" Grid.Column="0" Text="27/05/2024" />
+                <Label Grid.Row="1" Grid.Column="1" Text="30/05/2024" />
+                <Label Grid.Row="1" Grid.Column="2" Text="3" />
+            </Grid>
+        </Frame>
+
+        <Frame Margin="10" BackgroundColor="#fcfcfc">
+            <HorizontalStackLayout>
+                <Label Text="Valor Total:" />
+                <Label Text="R$ 750,00" />
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Button Text="Voltar"
+                HorizontalOptions="Center" 
+                Clicked="Button_Clicked"
+                BackgroundColor="#b1ccc4"
+                TextColor="#4e5861"/>
+    </VerticalStackLayout>
+</ContentPage>
